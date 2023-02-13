@@ -18,9 +18,8 @@
 }   
 
 body{background-color: var(--bg-color-body);}
+
 /*Nav bar completo*/
-
-
 .sidebar{
     position: fixed;
     width: 250px;
@@ -155,12 +154,9 @@ label#check:hover{
     border-radius: 10px 0 0 10px;
 }
 
-
-
-
-
 #msg{
     margin: 20px;
+    bottom: 0;
     border-radius: 15px;
     width: 51%;
     position: absolute;
@@ -168,7 +164,6 @@ label#check:hover{
     border: none;
     padding: 1px 16px;
     font-size: 15px;
-    bottom: 0;
     text-orientation: upright;
     resize: none;
     padding-top: 20px;
@@ -176,22 +171,28 @@ label#check:hover{
     max-width: 200vh;
 }
 
+.box2{float: inline;}
+
 #enviar{
-    height: 25px;
-    width: 29px;
-    position: relative;
-    margin-top: -10vh;
-    margin-bottom: 2.5vh;
-    margin-left: 96vh;
+    right: 0;
+    height: 30px;
     cursor: pointer;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 2rem;
+    margin-right: 1.4rem;
 }
 
-.fa-paperclip{
-    font-size: 27px;
-    position: relative;
-    margin-left: 89vh;
-    margin-top: 87vh;
+#paperclip-icon{
+    height: 34px;
+    right: 0;
+    height: 30px;
     cursor: pointer;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 2rem;
+    margin-right: 4.4rem;
+    font-weight: 800;
 }
 
 .fa-users-line{
@@ -245,15 +246,7 @@ button[type='submit'] {display: none;}
 
 @media only screen and (max-width: 1050px)  and (max-height: 600px) {
     
-    #enviar{
-        margin-left: 107vh;
-        margin-bottom: 3vh;
-    }
     
-    .fa-paperclip{
-        margin-left: 99vh;
-        margin-top: 86vh;
-    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -275,16 +268,7 @@ button[type='submit'] {display: none;}
         width: 55%;
     }
 
-    #enviar{
-        margin-left: 103vh;
-        margin-bottom: 2.2vh;
-    }
     
-    .fa-paperclip{
-        margin-left: 97vh;
-        margin-top: 89.5vh;
-    }
-
 
 }
 
@@ -298,15 +282,7 @@ button[type='submit'] {display: none;}
         width: 60%;
     }
 
-    #enviar{
-        margin-left: 121vh;
-        margin-bottom: 2.2vh;
-    }
     
-    .fa-paperclip{
-        margin-left: 115vh;
-        margin-top: 89.5vh;
-    }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -327,15 +303,7 @@ button[type='submit'] {display: none;}
         margin-top: 1.3vh;
     }
 
-    #enviar{
-        margin-left: 106vh;
-    }
     
-    .fa-paperclip{
-        margin-left: 100vh;
-        margin-top: 91vh;
-        font-size: 29px;
-    }
 
     
 }
@@ -359,26 +327,11 @@ button[type='submit'] {display: none;}
         width: 60%;
     }
 
-    #enviar{
-        margin-left: 122vh;
-    }
     
-    .fa-paperclip{
-        margin-left: 115vh;
-    }
 }
 
 @media only screen and (min-width: 1600px) and (min-height: 1000px) {
-    #enviar{
-        margin-left: 107vh;
-        margin-bottom: 2vh;
-    }
     
-    .fa-paperclip{
-        margin-left: 102vh;
-        margin-top: 92vh;
-        font-size: 30px;
-    }
 
     .fa-users, #novaMensagem{
         margin-top: 1vh;
@@ -389,15 +342,5 @@ button[type='submit'] {display: none;}
     #msg{
         width: 65%;
     }
-
-    #enviar{
-        margin-left: 126vh;
-    }
-    
-    .fa-paperclip{
-        margin-left: 121vh;
-        font-size: 30px;
-    }
-
 }
 
